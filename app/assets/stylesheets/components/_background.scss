@@ -4,9 +4,11 @@
 
 .main_background{
   background-image: url('https://res.cloudinary.com/daaxwngzv/image/upload/v1772021515/mainmassageimage_eidzaf.jpg');
-  height: 100vh;
+  height: 110vh;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  z-index: 1;
 }
 
 .theraputicbackgroundcolor{

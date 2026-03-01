@@ -1,0 +1,91 @@
+.about-square {
+  aspect-ratio: 1 / 1;
+  background: #BF8D2C;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 200px;
+  color: white;
+}
+
+.squarecard{
+  aspect-ratio: 1 / 1;
+  max-width: 800px
+}
+
+.about-section {
+  padding: 0px;
+  padding-bottom: 120px;
+
+  margin-top: -110px;
+  position: relative;
+  z-index: 2;
+
+
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 600px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #f8f6f3;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.08);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 80px;
+  max-width: 600px;
+}
+
+.about-name {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.about-role {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.about-divider {
+  width: 40px;
+  height: 1px;
+  background: #000;
+  margin-bottom: 30px;
+}
+
+.about-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+@media (max-width: 992px) {
+  .about-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content {
+    padding: 60px 30px;
+  }
+
+  .about-section {
+    padding: 60px 0;
+  }
+}
