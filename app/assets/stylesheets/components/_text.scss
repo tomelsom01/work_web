@@ -1,8 +1,11 @@
 .maintextsize{
   font-size: clamp(5rem, calc(4vw + 1rem), 3rem);
+
+
 }
 .secondtextsize{
   font-size: clamp(3rem, calc(2vw + 0.5rem), 1.2rem);
+
 }
 .about-stat {
   background: #F5F5F3;
@@ -20,4 +23,54 @@
   background: white;
   padding: 40px;
   border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+
+.card h5 {
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.herotextposition{
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  max-width:700px;
+}
+
+.greentick {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 25px;
+  font-size: clamp(1rem, calc(2vw + 0.5rem), 1.2rem);
+}
+
+.greentick li::before {
+  content: "✓";
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  color: green;
+  font-size: 12px;
+  font-weight: bold;
 }

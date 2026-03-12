@@ -71,3 +71,5 @@ gem "bootstrap", "~> 5.3.0"
 gem "cloudinary"
 
 gem "dotenv-rails", groups: [:development, :test]
+
+gem "letter_opener"

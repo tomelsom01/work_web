@@ -3,12 +3,12 @@
 }
 
 .main_background{
-  background-image: url('https://res.cloudinary.com/daaxwngzv/image/upload/v1772021515/mainmassageimage_eidzaf.jpg');
-  height: 110vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: 1;
+  background-image: url('https://res.cloudinary.com/daaxwngzv/image/upload/v1772617011/ChatGPT_Image_Mar_4_2026_09_35_25_AM_hk8haj.png');
+  min-height:70vh;
+  display:flex;
+  align-items:center;
+  background-size:cover;
+  background-position:center;
 }
 
 .theraputicbackgroundcolor{
@@ -27,4 +27,52 @@
 
 .backgroundcolor{
   background-color: #F5F5F3;
+}
+
+.hero-wrapper{
+position:relative;
+min-height:80vh;
+display:flex;
+align-items:center;
+justify-content:center;
+
+background-image:
+linear-gradient(
+rgba(0,0,0,0.45),
+rgba(0,0,0,0.45)
+),
+url('https://res.cloudinary.com/daaxwngzv/image/upload/v1772617011/ChatGPT_Image_Mar_4_2026_09_35_25_AM_hk8haj.png');
+
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.hero-content{
+max-width:700px;
+z-index:2;
+}
+
+.trust-bar{
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+
+background:rgba(255,255,255,0.95);
+padding:20px 0;
+border-top:1px solid rgba(0,0,0,0.08);
+box-shadow:0 -6px 20px rgba(0,0,0,0.08);
+}
+
+.trust-item h6{
+font-weight:600;
+color:#111;
+margin-bottom:3px;
+}
+
+.trust-item p{
+font-size:0.9rem;
+color:#6c757d;
+margin:0;
 }

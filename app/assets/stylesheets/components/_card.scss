@@ -16,9 +16,7 @@
   padding: 0px;
   padding-bottom: 120px;
 
-  margin-top: -110px;
   position: relative;
-  z-index: 2;
 
 
 }
@@ -75,6 +73,39 @@
   line-height: 1.8;
   color: #333;
 }
+
+.card {
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  background: #fff;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+   padding: 30px;
+}
+
+.card-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+
+.form-control {
+  border-radius: 8px;
+}
+
+.card2 {
+
+  border: none;
+  border-radius: 5%;
+  background: #fff;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
 
 @media (max-width: 992px) {
   .about-wrapper {

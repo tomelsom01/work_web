@@ -1,29 +1,84 @@
 <div class="backgroundcolor">
-  <div class="main_background text-center d-flex align-items-center">
+<div class="hero-wrapper">
+
+  <div class="hero-content container text-center">
+
+    <h1 class="hero-title">Mobile Sports Massage in London</h1>
+
+    <p class="hero-subtitle">
+      Expert massage therapy delivered to your door.
+    </p>
+
+    <ul class="greentick">
+      <li>Appointments 10am–10pm</li>
+      <li>Qualified, vetted and insured</li>
+      <li>Clinical and evidence-based approach</li>
+    </ul>
+
+    <a href="#booking" class="btn btn-light btn-lg mt-3">
+      Book Your Treatment
+    </a>
+
+  </div>
+
+  <!-- Trust Bar -->
+  <div class="trust-bar">
     <div class="container">
-      <h1 class="maintextsize">The London Massage</h1>
-      <p class="secondtextsize">Expert massage, delivered to your door.</p>
+      <div class="row text-center">
+
+        <div class="col-md-3 col-6">
+          <div class="trust-item">
+            <h6>University Qualified</h6>
+            <p>Sports Therapy Degree</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <div class="trust-item">
+            <h6>Fully Insured</h6>
+            <p>Professional Cover</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <div class="trust-item">
+            <h6>Mobile Service</h6>
+            <p>Treatments at Your Home</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <div class="trust-item">
+            <h6>5★ Client Reviews</h6>
+            <p>Trusted by Local Clients</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
+
+</div>
+
   <section class="about-section">
   <div class="about-wrapper">
 
     <div class="about-image">
-      <%= cl_image_tag("diyqhv89wwxmes0okenq") %>
+      <%= cl_image_tag("ChatGPT_Image_Mar_4_2026_09_50_41_AM_ukiglj", class: "about-image-cover") %>
     </div>
 
     <div class="about-content">
-      <h2 class="about-name">Tom Elsom</h2>
+      <h2 class="about-name">About Tom</h2>
       <p class="about-role">Sports Therapist</p>
 
       <div class="about-divider"></div>
 
       <p class="about-text">
-        I’ve spent the past 16 years helping people move without pain and perform at their best, from professional athletes and public figures to busy professionals balancing work and family life.
-        <br><br>
-        Now based in South London, I offer tailored, at-home treatments that fit seamlessly into your schedule. Every session is bespoke, combining hands-on therapy with practical movement advice where needed, so progress continues beyond the treatment room.
-        <br><br>
-        The focus is simple: sustainable results and long-term improvement.
+       I’ve spent the past 16 years helping people move better, recover from injury, and perform at their best. My clients have ranged from professional athletes and public figures to busy professionals balancing demanding work and family life.<br><br>
+
+       <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#aboutTomModal">
+         Read more about Tom
+        </button>
       </p>
     </div>
 
@@ -34,92 +89,185 @@
       <h2 class="text-center">Treatments</h2>
     </div>
     <div>
-      <div class="row justify-content-center g-0">
-        <div class="col-md-3">
-          <div class="card text-white">
-            <div class="card-body theraputicbackgroundcolor">
+      <div class="row justify-content-center g-4">
+        <div class="col-lg-3 col-md-6 mb-5 d-flex">
+          <div class="card w-100">
+            <div class="card-body">
               <%=cl_image_tag("therapeuticmassage_hemrkx", class: "card-img-top", alt: "Theraputic massage image")  %>
-              <h3 class="card-title">Theraputic</h3>
+              <h3 class="card-title">Theraputic Massage</h3>
               <h5><b>Restore balance. Reset the nervous system.</b></h5>
               <p>A deeply calming treatment designed to reduce accumulated stress and encourage full-body relaxation.</p>
               <h4 class="card-title">Benefits</h4>
               <ul>
-                <li>Calms the nervous system and reduces stress load</li>
-                <li>Relieves muscular tension caused by daily strain</li>
-                <li>Improves sleep quality</li>
-                <li>Enhances mental clarity and emotional balance</li>
-                <li>Promotes circulation and overall wellbeing</li>
-                <li>Creates space for physical and psychological reset</li>
+               <li>Reduces accumulated stress and sympathetic overdrive</li>
+               <li>Relieves general muscular tension from daily strain</li>
+               <li>Improves sleep quality and recovery capacity</li>
+               <li>Enhances circulation and tissue nourishment</li>
+               <li>Supports mental clarity and emotional regulation</li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card text-white">
-            <div class="card-body deeptissuebackgroundcolor">
+        <div class="col-lg-3 col-md-6 mb-5 d-flex">
+          <div class="card w-100">
+            <div class="card-body">
               <%=cl_image_tag("sports-massage-deep-tissue_ziu36h", class: "card-img-top", alt: "Deep tissue massage image")  %>
-              <h3 class="card-title">Deep Tissue</h3>
+              <h3 class="card-title">Deep Tissue Massage</h3>
               <h5><b>Targeted treatment for chronic tension.</b></h5>
               <p>A focused, slower-paced approach that works into deeper muscle layers to address persistent tightness and restriction.</p>
               <h4 class="card-title">Benefits</h4>
                <ul>
                  <li>Releases chronic muscular tension</li>
-                 <li>Lowers blood pressure</li>
-                 <li>Reduces chronic pain</li>
-                 <li>Improves circulation</li>
+                 <li>Improves mobility and joint range of motion</li>
+                 <li>Reduces long-standing neck, shoulder and lower back discomfort</li>
                  <li>Breaks down adhesions and areas of restriction</li>
-                 <li>Improves mobility and range of motion</li>
-                 <li>Stress relief</li>
-               <li>Supports recovery from repetitive strain</li>
-               <li>Reduces long-standing neck, shoulder and lower back discomfort</li>
-               <li>Enhances structural balance</li>
+                 <li>Supports recovery from repetitive strain patterns</li>
              </ul>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body sportsremedialbackgroundcolor">
+        <div class="col-lg-3 col-md-6 mb-5 d-flex">
+          <div class="card w-100">
+            <div class="card-body">
               <%=cl_image_tag("sprtmss_vaqdxe", class: "card-img-top", alt: "Sport massage image")  %>
-              <h3 class="card-title">Sports & Remedial Massage</h3>
+              <h3 class="card-title">Sports Massage</h3>
               <h5><b>Performance-driven, clinically informed treatment.</b></h5>
               <p>Designed for active and sedentary individuals who want to move better, recover faster and reduce injury risk.</p>
               <h4 class="card-title">Benefits</h4>
               <ul>
                  <li>Supports injury prevention strategies</li>
                  <li>Assists rehabilitation of minor strains and overuse issues</li>
-                 <li>Reduces scar tissue and adhesions</li>
-                 <li>Improves performance</li>
-                 <li>Reduces pain</li>
-                 <li>Identifies and addresses muscular imbalances</li>
                  <li>Improves movement efficiency and flexibility</li>
-               <li>Releases tension</li>
-               <li>Enhances pre-event preparation and post-event recovery</li>
-               <li>Improves posture and functional movement patterns</li>
-               <li>Reduces post-exercise soreness</li>
+                 <li>Reduces post-training soreness and recovery time</li>
+                 <li>Identifies and addresses muscular imbalances</li>
              </ul>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card text-white">
-            <div class="card-body cuppingbackgroundcolor">
+        <div class="col-lg-3 col-md-6 mb-5 d-flex">
+          <div class="card w-100">
+            <div class="card-body  d-flex flex-column">
               <%=cl_image_tag("CuppingTherapy_uimjvb", class: "card-img-top", alt: "Cupping massage image")  %>
-              <h3 class="card-title">Cupping</h3>
+              <h3 class="card-title">Cupping Massage</h3>
               <h5><b>Advanced myofascial decompression.</b></h5>
               <p>A specialised technique used to lift and decompress soft tissue, increasing local circulation and reducing fascial restriction.</p>
               <h4 class="card-title">Benefits</h4>
               <ul>
-                <li>Improves local blood flow</li>
+                <li>Increases local blood flow to targeted areas</li>
                 <li>Reduces deep muscular tightness</li>
                 <li>Releases fascial restriction</li>
-                <li>Supports recovery and tissue health</li>
+                <li>Supports tissue recovery and mobility</li>
                 <li>Complements deep tissue and sports massage</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="container py-5">
+
+  <div class="row justify-content-center">
+    <div class="col-lg-7">
+
+      <div class="text-center mb-4">
+        <h2>Contact</h2>
+        <p class="text-muted">Have a question or want to book a treatment? Get in touch.</p>
+
+        <p class="mb-1">
+          <strong>Phone:</strong> <a href="tel:07123456789">07123 456789</a>
+        </p>
+
+        <p>
+          <strong>Email:</strong> <a href="mailto:info@thelondonmassage.co.uk">info@thelondonmassage.co.uk</a>
+        </p>
+      </div>
+
+      <div class="card2 shadow-sm border-0">
+        <div class="card-body pt-4 pb-2 px-4">
+
+          <h4 class="mb-4 text-center">Send a Message</h4>
+
+          <%= form_with url: contact_path, method: :post do |f| %>
+
+            <div class="mb-3">
+              <%= f.label :name, class: "form-label fw-semibold" %>
+              <%= f.text_field :name, class: "form-control form-control-lg", placeholder: "Your name", required: true %>
+            </div>
+
+            <div class="mb-3">
+              <%= f.label :email, class: "form-label fw-semibold" %>
+              <%= f.email_field :email, class: "form-control form-control-lg", placeholder: "your@email.com", required: true %>
+            </div>
+
+            <div class="mb-3">
+              <%= f.label :phone, "Telephone", class: "form-label fw-semibold" %>
+              <%= f.telephone_field :phone, class: "form-control", placeholder: "07...", required: true %>
+            </div>
+
+            <div class="mb-3">
+              <%= f.label :address, "Address / Location", class: "form-label fw-semibold" %>
+              <%= f.text_field :address, class: "form-control", placeholder: "Where the treatment will take place", required: true %>
+            </div>
+
+            <div class="mb-4">
+              <%= f.label :message, class: "form-label fw-semibold" %>
+              <%= f.text_area :message, class: "form-control", rows: 5, placeholder: "How can I help?", required: true %>
+            </div>
+
+            <div class="d-grid pb-4">
+              <%= f.submit "Send Message", class: "btn btn-dark btn-lg" %>
+            </div>
+
+          <% end %>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="aboutTomModal" tabindex="-1" aria-labelledby="aboutTomModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="aboutTomModalLabel">About Tom Elsom</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <p>
+        I’ve spent the past 16 years helping people move better, recover from injury,
+        and perform at their best. My clients have ranged from professional athletes
+        and public figures to busy professionals balancing demanding work and family life.
+        </p>
+
+        <p>
+        Over the years I’ve seen how modern lifestyles place constant strain on the body.
+        Long hours at desks, repetitive movement, training loads, and everyday stress can
+        all lead to pain, tension, and reduced mobility.
+        </p>
+
+        <p>
+        My treatments focus on identifying the underlying causes of discomfort and
+        addressing them with targeted hands-on therapy. Sessions may combine sports
+        massage, deep tissue techniques, and remedial work to restore movement and
+        reduce pain.
+        </p>
+
+        <p>
+        Now based in South London, I offer professional treatments in the comfort of
+        your home. Each session is tailored to the individual, combining therapy with
+        practical advice where needed so improvements continue beyond the treatment.
+        </p>
+
+        <p><strong>The aim is simple: lasting results and helping you move through life with less pain.</strong></p>
+
+      </div>
+
     </div>
   </div>
 </div>
