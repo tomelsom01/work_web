@@ -73,3 +73,5 @@ gem "cloudinary"
 gem "dotenv-rails", groups: [ :development, :test ]
 
 gem "letter_opener"
+
+gem "rack", ">= 3.2.5"
