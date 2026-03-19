@@ -23,8 +23,8 @@ default: &default
 development:
   <<: *default
   database: work_web_development
-  username: work_web       # or another DB user if you created one
-  password: raiden28        # leave blank if no password set
+  username: postgres       # or another DB user if you created one
+  password: 'Raiden28'    # leave blank if no password set
   host: localhost
   port: 5432
 
