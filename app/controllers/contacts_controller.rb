@@ -12,7 +12,6 @@ class ContactsController < ApplicationController
   ).deliver_now
 
   redirect_to root_path, notice: "Message sent successfully."
-
   end
   private
 
