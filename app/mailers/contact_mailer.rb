@@ -1,13 +1,15 @@
 class ContactMailer < ApplicationMailer
-  default to: "te28@hotmail.com"
+  def contact_email(name, email, message, phone, address)
+  @name = name
+  @email = email
+  @message = message
+  @phone = phone
+  @address = address
 
-  def contact_email(name, email, phone, address, message)
-    @name = name
-    @email = email
-    @phone = phone
-    @address = address
-    @message = message
-
-    mail(subject: "New Contact Form Message")
+  mail(
+    to: "te28@hotmail.com",
+    subject: "New Contact Form Message",
+    from: email
+  )
   end
 end

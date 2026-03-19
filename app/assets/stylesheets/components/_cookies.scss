@@ -1,0 +1,15 @@
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(110%);
+  opacity: 0;
+  transition: all 0.4s ease;
+  z-index: 9999;
+}
+
+#cookie-banner.show {
+  transform: translateY(0);
+  opacity: 1;
+}

@@ -1,0 +1,74 @@
+.premium-nav {
+  background: white; /* solid white instead of transparent */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* subtle shadow for contrast */
+  padding: 16px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  margin-left: 16px;
+  color: #333;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.book-btn {
+  padding: 8px 18px;
+  border-radius: 6px;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 10px;
+}
+
+.toggler-icon {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #000;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.brand-logo-img {
+  height: 32px;
+  max-width: 120px; /* 🔥 THIS is what you’re missing */
+  object-fit: contain;
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+
+.navbar-toggler:not(.collapsed) .top-bar {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.navbar-toggler:not(.collapsed) .middle-bar {
+  opacity: 0;
+}
+.navbar-toggler:not(.collapsed) .bottom-bar {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile adjustments */
+@media (max-width: 991px) {
+  .nav-link {
+    padding: 10px 0;
+    margin-left: 0;
+  }
+
+  .book-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

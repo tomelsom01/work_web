@@ -1,0 +1,29 @@
+.reviews-section{
+background:#f8f9fa;
+}
+
+.review-card{
+max-width:700px;
+background:white;
+padding:40px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.review-card p{
+font-size:1.1rem;
+line-height:1.7;
+color:#333;
+margin:20px 0;
+}
+
+.stars{
+font-size:1.4rem;
+color:#f5b301;
+letter-spacing:3px;
+}
+
+.review-author{
+font-weight:500;
+color:#6c757d;
+}
