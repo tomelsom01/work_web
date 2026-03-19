@@ -1,4 +1,7 @@
 ENV["RAILS_ENV"] ||= "test"
+ENV["CLOUDINARY_CLOUD_NAME"] ||= "test"
+ENV["CLOUDINARY_API_KEY"] ||= "test"
+ENV["CLOUDINARY_API_SECRET"] ||= "test"
 require_relative "../config/environment"
 require "rails/test_help"
 
