@@ -19,6 +19,62 @@
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "@id": "https://mobilemassagelondon.com/#business",
+
+  "name": "Mobile Massage London",
+  "url": "https://mobilemassagelondon.com",
+
+  "logo": "<%= image_url('mobilemassagelondon.png') %>",
+  "image": "https://res.cloudinary.com/daaxwngzv/image/upload/v1772617011/ChatGPT_Image_Mar_4_2026_09_35_25_AM_hk8haj.png",
+
+  "description": "Mobile sports massage therapist in London specialising in deep tissue, recovery, and injury prevention. Treatments delivered to your home, office, or hotel across Central London.",
+
+  "telephone": "+447356014431",
+  "email": "tom@mobilemassagelondon.com",
+
+  "priceRange": "££",
+
+  "areaServed": [
+    { "@type": "City", "name": "London" },
+    { "@type": "AdministrativeArea", "name": "Kensington and Chelsea" },
+    { "@type": "Place", "name": "Canary Wharf, London" },
+    { "@type": "Place", "name": "London Bridge, London" }
+  ],
+
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+447356014431",
+    "contactType": "customer service",
+    "areaServed": "GB"
+  },
+
+  "serviceType": [
+    "Sports Massage",
+    "Deep Tissue Massage",
+    "Mobile Massage Therapy"
+  ],
+
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "10:00",
+      "closes": "22:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday","Sunday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ]
+}
+</script>
   </head>
 
   <body>
