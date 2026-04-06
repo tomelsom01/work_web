@@ -14,12 +14,23 @@
 
     <div class="collapse navbar-collapse" id="navbarMain">
       <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link" href="#therapist">Therapist</a></li>
-        <li class="nav-item"><a class="nav-link" href="#treatments">Treatments</a></li>
-        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+        <li class="nav-item">
+          <%= link_to "Home", root_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Therapist", root_path(anchor: "therapist"), class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Treatments", root_path(anchor: "treatments"), class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Reviews", root_path(anchor: "reviews"), class: "nav-link" %>
+        </li>
         <li class="nav-item"><%= link_to "FAQ", faq_path, class: "nav-link" %></li>
         <li class="nav-item ms-lg-3">
-          <a href="#booking" class="btn btn-dark book-btn">Book Now</a>
+         <a href="<%= root_path(anchor: 'booking') %>" class="btn btn-dark book-btn">
+            Book Now
+        </a>
         </li>
       </ul>
     </div>
