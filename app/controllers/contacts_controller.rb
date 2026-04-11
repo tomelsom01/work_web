@@ -8,7 +8,8 @@ class ContactsController < ApplicationController
     contact_params[:email],
     contact_params[:message],
     contact_params[:phone],
-    contact_params[:address]
+    contact_params[:address],
+    contact_params[:treatment]
   ).deliver_now
 
   redirect_to root_path, notice: "Message sent successfully."
@@ -16,6 +17,6 @@ class ContactsController < ApplicationController
   private
 
   def contact_params
-    params.permit(:name, :email, :message, :phone, :address)
+    params.permit(:name, :email, :message, :phone, :address, :treatment)
   end
 end

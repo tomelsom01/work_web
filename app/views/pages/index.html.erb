@@ -329,7 +329,9 @@
             Ideal for focused treatment on one area of tension.
           </p>
 
-          <a href="#booking" class="btn btn-outline-dark booking-btn">
+          <a href="<%= root_path(anchor: 'booking') %>"
+             class="btn btn-outline-dark booking-btn"
+             data-treatment="60 Minutes">
             Book 60 Minutes
           </a>
         </div>
@@ -350,7 +352,9 @@
             Perfect for a full body treatment or multiple problem areas.
           </p>
 
-          <a href="#booking" class="btn btn-dark booking-btn">
+          <a href="<%= root_path(anchor: 'booking') %>"
+             class="btn btn-dark booking-btn"
+             data-treatment="90 Minutes">
             Book 90 Minutes
           </a>
 
@@ -367,7 +371,9 @@
             Extended recovery treatment for deeper work.
           </p>
 
-          <a href="#booking" class="btn btn-outline-dark booking-btn">
+          <a href="<%= root_path(anchor: 'booking') %>"
+             class="btn btn-outline-dark booking-btn"
+             data-treatment="120 Minutes">
             Book 120 Minutes
           </a>
 
@@ -639,6 +645,8 @@
 
           <%= form_with url: contact_path, method: :post do |f| %>
 
+            <%= f.hidden_field :treatment, id: "treatmentField" %>
+
             <div class="mb-3">
               <%= f.label :name, class: "form-label fw-semibold" %>
               <%= f.text_field :name, class: "form-control form-control-lg", placeholder: "Your name", required: true %>
@@ -661,7 +669,12 @@
 
             <div class="mb-4">
               <%= f.label :message, class: "form-label fw-semibold" %>
-              <%= f.text_area :message, class: "form-control", rows: 5, placeholder: "To book, please include your preferred date(s) & time(s), treatment type and how can I help?", required: true %>
+              <%= f.text_area :message,
+              id: "messageField",
+              class: "form-control",
+              rows: 5,
+              placeholder: "To book, please include your preferred date(s) & time(s)...",
+              required: true %>
             </div>
 
             <div class="d-grid pb-4">
