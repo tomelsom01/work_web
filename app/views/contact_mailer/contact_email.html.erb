@@ -1,13 +1,26 @@
-<h2>New Contact Message</h2>
+<div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #eee; border-radius: 8px;">
 
-<p><strong>Name:</strong> <%= @name %></p>
+  <h2 style="color: #2c3e50; margin-bottom: 20px;">
+    New Booking Enquiry
+  </h2>
 
-<p><strong>Email:</strong> <%= @email %></p>
+  <p><strong>Name:</strong><br><%= @name %></p>
 
-<p><strong>Phone:</strong> <%= @phone %></p>
+  <p><strong>Email:</strong><br><%= @email %></p>
 
-<p><strong>Address / Location:</strong> <%= @address %></p>
+  <p><strong>Phone:</strong><br><%= @phone %></p>
 
-<p><strong>Message:</strong></p>
+  <p><strong>Location:</strong><br><%= @address %></p>
 
-<p><%= @message %></p>
+  <% if @treatment.present? %>
+    <p><strong>Treatment:</strong><br><%= @treatment %></p>
+  <% end %>
+
+  <hr style="margin: 20px 0;">
+
+  <p><strong>Message:</strong></p>
+  <p style="background: #f9f9f9; padding: 10px; border-radius: 5px;">
+    <%= simple_format(@message) %>
+  </p>
+
+</div>
