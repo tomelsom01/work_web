@@ -15,4 +15,8 @@ Rails.application.routes.draw do
    get "contact", to: "contacts#new"
   post "contact", to: "contacts#create"
   get "faq", to: "pages#faq"
+  get "mobile-massage-kensington", to: "pages#mobile_massage_kensington"
+  get "mobile-massage-canary-wharf", to: "pages#mobile_massage_canary_wharf"
+  get "mobile-massage-chelsea", to: "pages#mobile_massage_chelsea"
+  get "mobile-massage-london-bridge", to: "pages#mobile_massage_london_bridge"
 end

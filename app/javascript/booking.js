@@ -1,21 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll(".booking-btn");
+  const params = new URLSearchParams(window.location.search);
+  const treatment = params.get("treatment");
 
-  buttons.forEach(button => {
-    button.addEventListener("click", function () {
-      const treatment = this.dataset.treatment;
+  if (treatment) {
+    const messageField = document.getElementById("messageField");
+    const treatmentField = document.getElementById("treatmentField");
 
-      // Prefill message
-      const messageField = document.getElementById("messageField");
-      if (messageField) {
-        messageField.value = `Hi Tom, I’d like to book a ${treatment} session.\nMy preferred date/time is:`;
-      }
+    if (messageField) {
+      messageField.value = `Hi Tom, I'd like to book a ${treatment} session.\nMy preferred date/time is:`;
+    }
 
-      // Optional: set hidden field
-      const treatmentField = document.getElementById("treatmentField");
-      if (treatmentField) {
-        treatmentField.value = treatment;
-      }
-    });
-  });
+    if (treatmentField) {
+      treatmentField.value = treatment;
+    }
+  }
 });

@@ -65,13 +65,21 @@ group :test do
   gem "selenium-webdriver"
 end
 
+# For styling and frontend assets
 gem "sassc-rails"
 gem "bootstrap", "~> 5.3.0"
 
+# For handling file uploads and cloud storage
 gem "cloudinary"
 
+# For managing environment variables in development and test
 gem "dotenv-rails", groups: [ :development, :test ]
 
+# For sending emails in development
 gem "letter_opener"
 
+# For handling file uploads
 gem "rack", ">= 3.2.5"
+
+# For generating sitemaps
+gem "sitemap_generator"
