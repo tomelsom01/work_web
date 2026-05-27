@@ -31,7 +31,7 @@
 
 .hero-wrapper{
 position:relative;
-min-height:90vh;
+min-height: calc(100svh - 55px);
 display:flex;
 align-items:center;
 justify-content:center;
