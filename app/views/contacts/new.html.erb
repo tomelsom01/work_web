@@ -2,25 +2,51 @@
 
   <h2>Contact</h2>
 
-  <%= form_with url: contact_path, method: :post do |f| %>
+        <%= form_with url: contact_path, method: :post, id: "contactForm" do |f| %>
 
-    <div class="mb-3">
-      <%= f.label :name %>
-      <%= f.text_field :name, class: "form-control", required: true %>
-    </div>
+            <%= f.hidden_field :treatment, id: "treatmentField" %>
 
-    <div class="mb-3">
-      <%= f.label :email %>
-      <%= f.email_field :email, class: "form-control", required: true %>
-    </div>
+            <div class="mb-3">
+              <%= f.label :name, class: "form-label fw-semibold" %>
+              <%= f.text_field :name, class: "form-control form-control-lg", placeholder: "Your name", required: true %>
+            </div>
 
-    <div class="mb-3">
-      <%= f.label :message %>
-      <%= f.text_area :message, class: "form-control", rows: 5, required: true %>
-    </div>
+            <div class="mb-3">
+              <%= f.label :email, class: "form-label fw-semibold" %>
+              <%= f.email_field :email, class: "form-control form-control-lg", placeholder: "your@email.com", required: true %>
+            </div>
 
-    <%= f.submit "Send Message", class: "btn btn-dark" %>
+            <div class="mb-3">
+              <%= f.label :phone, "Telephone", class: "form-label fw-semibold" %>
 
-  <% end %>
+              <%= f.telephone_field :phone,
+                class: "form-control",
+                placeholder: "07... or +44...",
+                id: "phone",
+                required: true %>
+
+              <div id="phoneError" class="error-message"></div>
+            </div>
+
+            <div class="mb-3">
+              <%= f.label :address, "Address / Location", class: "form-label fw-semibold" %>
+              <%= f.text_field :address, class: "form-control", placeholder: "Where the treatment will take place", required: true %>
+            </div>
+
+            <div class="mb-4">
+              <%= f.label :message, class: "form-label fw-semibold" %>
+              <%= f.text_area :message,
+              id: "messageField",
+              class: "form-control",
+              rows: 5,
+              placeholder: "To book, please include your preferred date(s) & time(s)...",
+              required: true %>
+            </div>
+
+            <div class="d-grid pb-4">
+              <%= f.submit "Send Message", class: "btn btn-dark btn-lg" %>
+            </div>
+
+          <% end %>
 
 </div>

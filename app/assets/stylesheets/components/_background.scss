@@ -31,7 +31,7 @@
 
 .hero-wrapper{
 position:relative;
-min-height:90vh;
+min-height:90svh;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -83,11 +83,23 @@ body{
 padding-top: 75px;
 }
 @media (max-width: 768px) {
-  body{
-    padding-top: 20px;
+   body{
+    padding-top: 55px;
+    overflow-x: hidden;
   }
+
   .hero-wrapper{
-    min-height: calc(100svh - 55px);
-    padding-bottom: 30px;
+    min-height: auto;
+    padding:
+      80px 20px 40px;
+  }
+
+  .hero-content{
+    max-width: 100%;
+  }
+
+  .trust-bar{
+    position: static;
+    margin-top: 30px;
   }
 }
