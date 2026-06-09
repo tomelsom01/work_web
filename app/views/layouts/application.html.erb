@@ -3,7 +3,7 @@
   <head>
     <title>Mobile Massage London | Sports & Deep Tissue Massage at Home</title>
     <%= favicon_link_tag 'mobilemassagelondon.png', type: 'image/png' %>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Mobile Massage London">
     <meta name="mobile-web-app-capable" content="yes">
@@ -22,75 +22,85 @@
     <%= javascript_importmap_tags %>
 
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HealthAndBeautyBusiness",
-  "@id": "https://mobilemassagelondon.com/#business",
+      {
+        "@context": "https://schema.org",
+        "@type": "HealthAndBeautyBusiness",
+        "@id": "https://mobilemassagelondon.com/#business",
 
-  "name": "Mobile Massage London",
-  "url": "https://mobilemassagelondon.com",
+        "name": "Mobile Massage London",
+        "url": "https://mobilemassagelondon.com",
 
-  "logo": "<%= image_url('mobilemassagelondon.png') %>",
-  "image": "https://res.cloudinary.com/daaxwngzv/image/upload/v1772617011/ChatGPT_Image_Mar_4_2026_09_35_25_AM_hk8haj.png",
+        "logo": "<%= image_url('mobilemassagelondon.png') %>",
+        "image": "https://res.cloudinary.com/daaxwngzv/image/upload/v1772617011/ChatGPT_Image_Mar_4_2026_09_35_25_AM_hk8haj.png",
 
-  "description": "Mobile sports massage therapist in London specialising in deep tissue, recovery, and injury prevention. Treatments delivered to your home, office, or hotel across Central London.",
+        "description": "Mobile sports massage therapist in London specialising in deep tissue, recovery, and injury prevention. Treatments delivered to your home, office, or hotel across Central London.",
 
-  "telephone": "+447356014431",
-  "email": "tom@mobilemassagelondon.com",
+        "telephone": "+447356014431",
+        "email": "tom@mobilemassagelondon.com",
 
-  "priceRange": "££",
+        "priceRange": "££",
 
-  "areaServed": [
-    { "@type": "City", "name": "London" },
-    { "@type": "AdministrativeArea", "name": "Kensington and Chelsea" },
-    { "@type": "Place", "name": "Canary Wharf, London" },
-    { "@type": "Place", "name": "London Bridge, London" }
-  ],
+        "areaServed": [
+          { "@type": "City", "name": "London" },
+          { "@type": "AdministrativeArea", "name": "Kensington and Chelsea" },
+          { "@type": "Place", "name": "Canary Wharf, London" },
+          { "@type": "Place", "name": "London Bridge, London" }
+        ],
 
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+447356014431",
-    "contactType": "customer service",
-    "areaServed": "GB"
-  },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+447356014431",
+          "contactType": "customer service",
+          "areaServed": "GB"
+        },
 
-  "serviceType": [
-    "Sports Massage",
-    "Deep Tissue Massage",
-    "Mobile Massage Therapy"
-  ],
+        "serviceType": [
+          "Sports Massage",
+          "Deep Tissue Massage",
+          "Mobile Massage Therapy"
+        ],
 
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-      "opens": "10:00",
-      "closes": "22:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Saturday","Sunday"],
-      "opens": "09:00",
-      "closes": "18:00"
-    }
-  ]
-}
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "10:00",
+            "closes": "22:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday","Sunday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ]
+      }
 
 
 
 </script>
-<meta property="og:title" content="Mobile Massage London">
-<meta property="og:description" content="Mobile sports massage therapy in London. We come to your home, office or hotel.">
-<meta property="og:image" content="https://res.cloudinary.com/daaxwngzv/image/upload/v1774976034/whatsapptrial_x0bxcf.png?v=2">
-<meta property="og:url" content="<%= url_for(only_path: false) %>">
-<meta property="og:type" content="website">
-<meta property="fb:app_id" content="1331036895603598">
+    <meta property="og:title" content="Mobile Massage London">
+    <meta property="og:description" content="Mobile sports massage therapy in London. We come to your home, office or hotel.">
+    <meta property="og:image" content="https://res.cloudinary.com/daaxwngzv/image/upload/v1774976034/whatsapptrial_x0bxcf.png?v=2">
+    <meta property="og:url" content="<%= url_for(only_path: false) %>">
+    <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="1331036895603598">
 
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Mobile Massage London">
-<meta name="twitter:description" content="Mobile sports massage therapy in London. Book a professional massage at home.">
-<meta name="twitter:image" content="https://res.cloudinary.com/daaxwngzv/image/upload/v1774976034/whatsapptrial_x0bxcf.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mobile Massage London">
+    <meta name="twitter:description" content="Mobile sports massage therapy in London. Book a professional massage at home.">
+    <meta name="twitter:image" content="https://res.cloudinary.com/daaxwngzv/image/upload/v1774976034/whatsapptrial_x0bxcf.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXPFBEYC25"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-PXPFBEYC25');
+    </script>
   </head>
 
   <body>
